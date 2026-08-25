@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Website | Web制作学習中</title>
+  <meta name="description" content="Web制作を学習している制作者が、HTMLとCSSの練習として作成したポートフォリオサイトです。学習の記録として、自己紹介や作品などを掲載しています。">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .contact-button {
+      display: inline-block;
+      margin: 16px 0 32px;
+      padding: 10px 24px;
+      background-color: #4a90e2;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .contact-button:hover {
+      background-color: #3a7bc8;
+    }
+    nav {
+      background-color: #1a2b4a;
+      width: 100%;
+      padding: 16px 0;
+      margin-bottom: 32px;
+    }
+    .nav-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #888888;
+      margin: 0 0 24px;
+    }
+    .about-link {
+      display: block;
+      margin: 16px 0 24px;
+      color: #4a90e2;
+      text-decoration: underline;
+    }
+    p {
+      color: #444444;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+    .skills {
+      margin-top: 64px;
+      text-align: center;
+    }
+    .skills h2 {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding-bottom: 8px;
+      color: #1a2b4a;
+      border-bottom: 3px solid #4a90e2;
+    }
+    .skill-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 0;
+    }
+    .skill-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      min-height: 100px;
+      padding: 12px 16px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      color: #444444;
+      font-weight: bold;
+    }
+    .skill-card.learning {
+      flex-direction: column;
+      color: #4a90e2;
+    }
+    .skill-card .status {
+      display: block;
+      margin-top: 4px;
+      font-size: 12px;
+      font-weight: normal;
+      color: #888888;
+    }
+    footer {
+      background-color: #1a2b4a;
+      color: #ffffff;
+      text-align: center;
+      padding: 24px 0;
+      font-size: 12px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="#top">Home</a>
+      <a href="about.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="container" id="top">
+    <h1>My First Website</h1>
+    <p class="subtitle">Web制作、学習中です</p>
+    <p id="about">はじめまして。私はWeb制作を学んでいる者です。このサイトはHTMLとCSSの練習として作成しました。これからも少しずつ知識を増やしながら、より良いサイトを作れるように頑張ります。</p>
+    <a href="about.html" class="about-link">詳しいプロフィールはこちら</a>
+    <a href="contact.html" class="contact-button" id="contact">お問い合わせ</a>
+
+    <section class="skills">
+      <h2>スキル</h2>
+      <ul class="skill-list">
+        <li class="skill-card">HTML</li>
+        <li class="skill-card">CSS</li>
+        <li class="skill-card">Claude Code</li>
+        <li class="skill-card learning">プロンプトエンジニアリング<span class="status">学習中</span></li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    &copy; 2026 My Site. All Rights Reserved.
+  </footer>
+</body>
+</html>

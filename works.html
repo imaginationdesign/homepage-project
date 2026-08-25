@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Works | My First Website</title>
+  <meta name="description" content="Web制作の学習の中で制作した作品を紹介するページです。Claude Codeを活用しながら制作したサイトなどを掲載しています。">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    nav {
+      background-color: #1a2b4a;
+      width: 100%;
+      padding: 16px 0;
+      margin-bottom: 32px;
+    }
+    .nav-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 16px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #888888;
+      margin: 0 0 24px;
+    }
+    .works {
+      margin-top: 64px;
+      margin-bottom: 64px;
+      text-align: center;
+    }
+    .works h2 {
+      display: inline-block;
+      margin-bottom: 24px;
+      padding-bottom: 8px;
+      color: #1a2b4a;
+      border-bottom: 3px solid #4a90e2;
+    }
+    .work-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .work-card {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      color: #444444;
+      text-align: left;
+    }
+    .work-thumb {
+      flex: 0 0 200px;
+      height: 140px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+    }
+    .work-card .work-body {
+      flex: 1;
+    }
+    .work-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: #1a2b4a;
+    }
+    .work-card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+    }
+    footer {
+      background-color: #1a2b4a;
+      color: #ffffff;
+      text-align: center;
+      padding: 24px 0;
+      font-size: 12px;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+      .work-card {
+        flex-direction: column;
+      }
+      .work-thumb {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html#top">Home</a>
+      <a href="about.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="container" id="top">
+    <h1>Works</h1>
+    <p class="subtitle">作品紹介</p>
+
+    <section class="works">
+      <h2>作品紹介</h2>
+      <ul class="work-list">
+        <li class="work-card">
+          <div class="work-thumb"></div>
+          <div class="work-body">
+            <h3>My First Website</h3>
+            <p>Claude Codeを使って作成した最初のWebサイトです。HTMLとCSSの基礎を学びながら制作しました。</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    &copy; 2026 My Site. All Rights Reserved.
+  </footer>
+</body>
+</html>
